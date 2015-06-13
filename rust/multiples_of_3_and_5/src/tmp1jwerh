@@ -1,0 +1,25 @@
+fn main() {
+    let mut total_result: Vec<i32> = Vec::new();
+    let mut result: i32;
+    loop {
+
+    }
+
+}
+
+static mut mem_table : Vec<i32> = vec![-1;10000];
+
+fn fib(i: i32) -> i32{
+    if mem_table.get(i) != -1 {
+        return mem_table[i as usize].clone();
+    }
+    if i == 1 {
+        return 1;
+    }
+    if i==2 {
+        return 2;
+    }
+    let res: i32 = fib(i-2);
+
+
+}

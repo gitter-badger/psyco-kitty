@@ -1,0 +1,9 @@
+fn main() {
+    test(10);
+    test(1000);
+}
+
+fn test(top: u32) {
+    let result = (3..top).filter(|&x| (x % 3 == 0).fold(0, |sum, x| sum + x);
+    println!("{}", result);
+}

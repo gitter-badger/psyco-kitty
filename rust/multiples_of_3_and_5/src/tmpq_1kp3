@@ -1,0 +1,7 @@
+fn main() {
+
+}
+
+fn test(top: u32) {
+    let result = (3..top).filte
+}

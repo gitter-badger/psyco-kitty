@@ -1,0 +1,16 @@
+
+use std::thread;
+
+///this time, the goal of the program is to get an input with timeout using multithreading.
+
+fn main() {
+    
+}
+
+
+fn read<T>() -> T {
+    //first thread
+    let prize = false;
+    let input = thread::scoped
+
+}

@@ -1,0 +1,13 @@
+fn main() {
+    let mut total_result: Vec<i32> = Vec::new();
+    let mut mem_table : [i32; 10000] = [-1;10000];
+    let mut result: i32;
+    loop {
+
+    }
+
+}
+
+fn fib(n: i32, mt: &[i32; 10000]) -> i32{
+    if m
+}

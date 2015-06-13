@@ -1,0 +1,23 @@
+
+use std::thread;
+use io::stdin
+
+///this time, the goal of the program is to get an input with timeout using multithreading.
+
+fn main() {
+    
+}
+
+
+fn read<T>() -> T {
+    //first thread
+    let prize = Arc::new(Mutex::new(0))
+    let input: &str = ""; 
+    let input_t = thread::scoped(move || {
+
+        if prize == 0 {
+            prize = 1;
+        }
+    });
+
+}

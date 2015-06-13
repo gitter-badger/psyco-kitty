@@ -1,0 +1,27 @@
+fn main() {
+    let mut total_result: Vec<i32> = Vec::new();
+    let mut result: i32;
+    loop {
+
+    }
+
+}
+
+static mut mem_table : [i32; 10000] = [-1;10000];
+
+fn fib(i: i32) -> i32{
+    unsafe {
+    if mem_table[i as usize] != -1 {
+        return mem_table[i as usize];
+    }
+    } a
+    if i == 1 {
+        return 1;
+    }
+    if i==2 {
+        return 2;
+    }
+    let res: i32 = fib(i-2);
+
+
+}

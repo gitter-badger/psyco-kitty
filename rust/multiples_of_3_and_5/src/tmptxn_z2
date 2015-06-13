@@ -1,0 +1,20 @@
+fn main() {
+    test(10);
+    test(1000);
+}
+
+fn test(top: u32) {
+    let result = (3..top).filter(|&x| (x % 3 == 0)||(x % 5 == 0)).fold(0, |sum, x| sum + x);
+    println!("{}", result);
+}
+
+fn fibo(n){
+    let mut total_result : Vec<i32> = Vec::new
+    let mut mem_table : [i32; 10000] = [-1;10000];
+    let mut result: i32;
+    loop {
+
+    }
+
+
+}

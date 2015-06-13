@@ -1,0 +1,41 @@
+
+use std::thread;
+use std::io;
+use std::sync::{Mutex, Arc};
+use std::sync::mpsc::channel;
+
+///this time, the goal of the program is to get an input with timeout using multithreading.
+
+fn main() {
+    
+}
+
+
+fn read() -> String {
+    
+    let mut prize = Mutex::new(0);
+    let mut input= Mutex::new(String::new());
+
+
+
+    //first thread
+
+
+    let input_t = thread::scoped(move || {
+        let mut input = input.lock().unwrap();
+        io::stdin().read_line(&mut *input)
+        .ok()
+        .expect("Failed to read line");
+        let mut prize = prize.lock().unwrap();
+        if *prize == 0 {
+            *prize = 1;
+        }
+
+    });
+    //second thread
+
+
+    if prize.access() == 1 {
+        return
+
+}

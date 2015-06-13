@@ -1,0 +1,7 @@
+fn main() {
+
+}
+
+fn test(top: u32) {
+    let result = (3..top).filter(|&x| x % 3 = 0).filter
+}
